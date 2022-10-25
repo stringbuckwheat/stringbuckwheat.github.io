@@ -136,7 +136,8 @@ hr {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  margin-bottom: 60px;
 }
 .work-wrapper {
   border: 1px solid #666;
@@ -324,10 +325,12 @@ hr {
 
 /* START ABOUT */
 .tm-about {
-  background: url('../images/about-bg.jpg');
-  background-size: cover;
+  background: url('../images/about-bg1.jpg');
+  background-size: contain;
   background-attachment: fixed;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: left 90px center;
+  width: 50%;
   padding-top: 60px;
   padding-bottom: 100px;
 }
@@ -427,3 +430,34 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+
+
+/* CUSTOM */
+.mb-1 {
+  margin-bottom: 30px;
+}
+
+.work-wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.table-data button {
+	margin-bottom: 10px;
+}
+
+.skill img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.profile-skill img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 10px;
+}
