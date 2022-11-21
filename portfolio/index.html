@@ -39,9 +39,8 @@ https://templatemo.com/tm-464-ultra-profile
 				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
 					<li><a href="#home" class="smoothScroll">Home</a></li>
 					<li><a href="#work" class="smoothScroll">My Work</a></li>
-					<li><a href="#skill" class="smoothScroll">Skill</a></li>
+					<li><a href="#skills" class="smoothScroll">Skill</a></li>
 					<li><a href="#about" class="smoothScroll">About</a></li>
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -57,9 +56,16 @@ https://templatemo.com/tm-464-ultra-profile
 					<h1 class="tm-home-title"><strong>Choi Seo Kyung</strong></h1>
 					<h2 class="tm-home-subtitle">with feeling dreams and falling hard</h2>
 					<p>신입 개발자 <strong>최서경</strong>입니다.</p>
+					
+					<a href="https://github.com/stringbuckwheat" class="btn btn-default fa fa-github tm-view-more-btn"> Github</a>
+					<a href="https://velog.io/@stringbuckwheat" class="btn btn-default fa fa-book tm-view-more-btn"> Blog</a>
+					
+					<!--
 					<a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
+					-->
 				</div>
-				<div class="col-md-2 col-sm-1"></div>
+				<div class="col-md-2 col-sm-1">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -91,7 +97,7 @@ https://templatemo.com/tm-464-ultra-profile
 									파일 공유 등의 기능으로 프로젝트에 대한 자료를 관리합니다.<br>
 									<br>
 									Safari는 워크스페이스, 프로젝트 생성/관리, 업무 피드백, 파일 공유 등 다양한 기능을 갖춘 협업 툴로, <br>
-									저는 <strong>프로젝트, 프로젝트 통계, 업무 피드백 페이지</strong>를 구현하였습니다.
+									저는 <strong>프로젝트, 프로젝트 통계, 업무 피드백 페이지, </strong>WebSocket과 STOMP를 사용한 <strong>채팅</strong>을 구현하였습니다.
 								</td>
 							</tr>
 							<tr>
@@ -103,6 +109,8 @@ https://templatemo.com/tm-464-ultra-profile
 									<button type="button" class="btn btn-primary" disabled>Java</button>
 									<button type="button" class="btn btn-warning" disabled>MariaDB(10.1.48)</button>
 									<button type="button" class="btn btn-warning" disabled>MyBatis</button>
+									<button type="button" class="btn btn-primary" disabled>WebSocket</button>
+									<button type="button" class="btn btn-primary" disabled>STOMP</button><br>
 									<button type="button" class="btn btn-success" disabled>JavaScript(jQuery)</button>
 									<button type="button" class="btn btn-success" disabled>HTML</button>
 									<button type="button" class="btn btn-success" disabled>JSP</button>
@@ -157,7 +165,7 @@ https://templatemo.com/tm-464-ultra-profile
 				<div class="col-md-12 col-sm-8">
 					<div class="work-wrapper">
 						
-						<h3><a href="http://safari.o-r.kr/" target="_blank" class="tm-work-h3">전자제품 쇼핑몰 - 개인 프로젝트</a></h3>
+						<h3><a href="http://43.200.247.48/shop/" target="_blank" class="tm-work-h3">전자제품 쇼핑몰 - 개인 프로젝트</a></h3>
 						<img src="images/shop.png" alt="shop_project">
 						
 						<table class="table text-left">
@@ -200,7 +208,7 @@ https://templatemo.com/tm-464-ultra-profile
 								</td>
 								<td class="text-left">
 									<button class="btn btn-default" onclick="window.open('https://github.com/stringbuckwheat/shop')">Github</button>
-									<button class="btn btn-danger" onclick="window.open('http://safari.o-r.kr/')">Project</button>
+									<button class="btn btn-danger" onclick="window.open('http://43.200.247.48/shop/')">Project</button>
 								</td>
 							</tr>
 						</table>
@@ -212,7 +220,7 @@ https://templatemo.com/tm-464-ultra-profile
 	<!-- END work -->
 
 	
-	<!-- <!-- START PORTFOLIO
+	<!--  START PORTFOLIO
 	<section id="portfolio" class="tm-portfolio">
 		<div class="container">
 			<div class="row">
@@ -314,54 +322,48 @@ https://templatemo.com/tm-464-ultra-profile
 	END PORTFOLIO -->
 
 	<!-- START ABOUT -->
-	<section id="about" class="tm-about">
+	<section id="skills" class="tm-skills">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-7">
-					<div class="title">
-						<h1 class="tm-red-text">신입 개발자 <strong>최서경</strong>입니다</h1>
+				<div class="title">
+					<h1 class="tm-red-text">My <strong>Skills</strong></h1>
+				</div>
+			</div>
+			<div class="profile-skill">
+				<div class="row">
+					<div class="col-md-1 col-sm-6">
+						<img src="images/spring.png" alt="spring">
+						<h4 class="text-center">spring</h4>
 					</div>
-					<p><span class="tm-info-label">Name</span> <strong>최서경</strong></p>
-					<p><span class="tm-info-label">Birthday</span> 1994. 07. 30</p>
-					<p><span class="tm-info-label mb-1">Address</span> 서울시 구로구 </p>
-					
-					<h2 class="tm-red-text mb-1"><strong>SKILLS</strong></h2>
-					<div class="container profile-skill">
-						<div class="row">
-							<div class="col-md-1 col-sm-6">
-								<img src="images/spring.png" alt="spring">
-								<h4 class="text-center">spring</h4>
-							</div>
-							<div class="col-md-1 col-sm-6">
-								<img src="images/spring_boot.png" alt="spring_boot">
-								<h4 class="text-center">spring boot</h4>
-							</div>
-							<div class="col-md-1 col-sm-6">
-								<img src="images/mysql.png" alt="mysql">
-								<h4 class="text-center">MySql</h4>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-1 col-sm-6">
-								<img src="images/html.png" alt="html">
-								<h4 class="text-center">HTML</h4>
-							</div>
-							<div class="col-md-1 col-sm-6">
-								<img src="images/css.png" alt="css">
-								<h4 class="text-center">CSS</h4>
-							</div>
-							<div class="col-md-1 col-sm-6">
-								<img src="images/javascript.png" alt="javascript">
-								<h4 class="text-center">javascript</h4>
-							</div>
-							
-							<div class="col-md-1 col-sm-6">
-								<img src="images/react.png" alt="react">
-								<h4 class="text-center">react</h4>
-							</div>
-						</div>
+					<div class="col-md-1 col-sm-6">
+						<img src="images/spring_boot.png" alt="spring_boot">
+						<h4 class="text-center">spring boot</h4>
+					</div>
+					<div class="col-md-1 col-sm-6">
+						<img src="images/mysql.png" alt="mysql">
+						<h4 class="text-center">MySql</h4>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-1 col-sm-6">
+						<img src="images/html.png" alt="html">
+						<h4 class="text-center">HTML</h4>
+					</div>
+					<div class="col-md-1 col-sm-6">
+						<img src="images/css.png" alt="css">
+						<h4 class="text-center">CSS</h4>
+					</div>
+					<div class="col-md-1 col-sm-6">
+						<img src="images/javascript.png" alt="javascript">
+						<h4 class="text-center">javascript</h4>
+					</div>
+					
+					<div class="col-md-1 col-sm-6">
+						<img src="images/react.png" alt="react">
+						<h4 class="text-center">react</h4>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- END ABOUT -->
@@ -415,7 +417,7 @@ https://templatemo.com/tm-464-ultra-profile
 	<!-- END SOCIAL -->
 	
 	<!-- START RESUME -->
-	<section id="resume" class="tm-padding-top-bottom-100">
+	<section id="about" class="tm-padding-top-bottom-100">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6">					
